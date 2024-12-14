@@ -24,6 +24,8 @@ export default defineConfig({
               link: '/docs/romoim/front',
               items: [
                 {text: '安装', link: '/docs/romoim/front/install'},
+                {text: '快速开始', link: '/docs/romoim/front/quickstart'},
+                {text: '常量定义', link: '/docs/romoim/front/defines'},
               ]
             },
             {
