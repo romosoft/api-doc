@@ -35,10 +35,19 @@ jobs:
       # Build the VitePress site
       - name: Build VitePress
         run: yarn web:build
-      # Optionally, you can add steps to deploy your site here
-      # Example: Deploy to GitHub Pages or another hosting service
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub 自动提供的访问令牌
-          publish_dir: ./.vitepress/dist  # VitePress 构建的输出目录通常是 docs
+          path: ./.vitepress/dist
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
