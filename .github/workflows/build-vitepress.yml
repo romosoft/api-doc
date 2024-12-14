@@ -5,7 +5,7 @@ name: VitePress CI
 on:
   # Trigger the workflow only on push events to the "master" branch
   push:
-    branches: 
+    branches:
       - master  # 仅在 master 分支上推送时触发
 
   # Allows you to run this workflow manually from the Actions tab
@@ -30,11 +30,11 @@ jobs:
 
       # Install project dependencies using Yarn
       - name: Install dependencies
-        run: yarn install
+        run: yarn
 
       # Build the VitePress site
       - name: Build VitePress
-        run: yarn build
+        run: yarn web:build
 
       # Optionally, you can add steps to deploy your site here
       # Example: Deploy to GitHub Pages or another hosting service
