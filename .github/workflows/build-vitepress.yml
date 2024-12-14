@@ -38,7 +38,7 @@ jobs:
       # Optionally, you can add steps to deploy your site here
       # Example: Deploy to GitHub Pages or another hosting service
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3  # 使用 peaceiris 的 GitHub Pages 部署动作
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub 自动提供的访问令牌
           publish_dir: ./.vitepress/dist  # VitePress 构建的输出目录通常是 docs
