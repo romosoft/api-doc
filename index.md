@@ -13,11 +13,11 @@ hero:
       link: /docs
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 融茂IM
+    details: 通信如此简单
+  - title: SmartSoft
+    details: AI智能编码
+  - title: EasyApi
+    details: 轻API
 ---
 
