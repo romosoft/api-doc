@@ -34,6 +34,7 @@ export default defineConfig({
               link: '/docs/romoim/backend',
               items: [
                 {text: '获得密钥', link: '/docs/romoim/backend/get-key'},
+                {text: 'API接口', link: '/docs/romoim/backend/apis'},
               ]
             },
           ]
